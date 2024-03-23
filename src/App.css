@@ -1,0 +1,39 @@
+@import url(./styles/Card.css);
+@import url(./styles/Navbar.css);
+@import url(./styles/Footer.css);
+
+body {
+  padding: 10px;
+  margin: 0;
+  font-family: "Comme", sans-serif;
+}
+
+.heading-primary {
+  font-weight: 500;
+}
+
+.heading-secondary {
+  font-size: 50px;
+}
+
+.container {
+  border-radius: 20px;
+  box-shadow: 0px 0px 1px 0px;
+  padding: 10px;
+}
+
+@media screen and (max-width : 750px) {
+  .card-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .upper-nav-container {
+    display: none;
+  }
+
+  .inner-nav a {
+    padding: 4px;
+  }
+}
